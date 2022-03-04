@@ -1,0 +1,348 @@
+/* Import Fonts By Google fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
+/* Start Properties*/
+:root {
+    --main-color: #4a1084;
+}
+body {
+    background-color: #0e1619;
+}
+/*
+    Start Bootstrap Edit
+
+*/
+a {
+    color: #333;
+    text-decoration: none;
+}
+@media (min-width: 992px) {
+    .navbar-expand-lg .navbar-collapse {
+        justify-content: center;
+    }
+}
+.navbar-light .navbar-nav .nav-link{
+    color: #EEE;
+    transition:.5s;
+    font-size: 1.2rem;
+    font-family: cursive;
+    text-transform: uppercase;
+}
+.navbar-light .navbar-nav .nav-link.active {
+    color: #fff;
+}
+.navbar-light .navbar-nav .nav-link:hover, 
+.navbar-light .navbar-nav .nav-link:focus {
+    color: #fff;
+}
+@media(max-width: 992px) {
+    .navbar-collapse {
+        background: var(--main-color);
+        z-index: 2;
+        padding: 15px;
+        border-radius: 3px;
+    }
+}
+
+
+/* End Bootstrap Edit*/
+/* Start Settings Box*/
+.settings-box {
+    width: 300px;
+    position: fixed;
+    left:-300px;
+    top:0;
+    background-color: #000;
+    height:100%;
+    z-index: 2;
+    transition: 0.5s;
+    border-right: 1px solid rgba(204, 204, 204, 0.685);
+    color: #fff;
+}
+.settings-box.open {
+    left:0;
+}
+.settings-box .gear {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    right: -50px;
+    padding: 10px;
+    color: #EEE;
+    text-align: center;
+    font-weight: bold;
+    font-family: cursive;
+    top:30%;
+    cursor: pointer;
+    border-style: solid;
+    border-color: #CCC;
+    border-width: 1px 1px 1px 0px;
+}
+.settings-box .setting-body {
+    padding: 10px;
+}
+.settings-box .setting-body .colors{
+    padding: 5px;
+}
+.settings-box .setting-body .colors .colors-list {
+    list-style: none;
+    text-align: center;
+    margin-top: 15px;
+}
+.settings-box .setting-body .colors .colors-list li {
+    display: inline-block;
+    width:30px;
+    height: 30px;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.settings-box .setting-body .colors .colors-list li:first-of-type {
+    background-color: #4a1084;
+}
+.settings-box .setting-body .colors .colors-list li:nth-child(2) {
+    background-color: #e91e63
+}
+.settings-box .setting-body .colors .colors-list li:nth-child(3) {
+    background-color: #4caf50
+}
+.settings-box .setting-body .colors .colors-list li:nth-child(4) {
+    background-color: #673ab7
+}
+.settings-box .setting-body .colors .colors-list li:nth-child(5) {
+    background-color: #ff5722
+}
+.settings-box .setting-header {
+    background-color: var(--main-color);
+    color: #EEE;
+    padding: 10px;
+}
+.settings-box .setting-header h4 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    font-family: arial;
+    letter-spacing: 1px;
+}
+/* start landing page*/
+.landing {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+.landing .welcome {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    background-color: #000;
+    color: #fFF;
+}
+.landing .welcome .row {
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+.landing .welcome h2 {
+    font-style: italic;
+    font-weight: bold;;
+    font-size: 3rem;
+}
+.landing .welcome h2 span {
+    color: var(--main-color);
+}
+.landing .welcome .img img {
+    width: 90%;
+}
+.landing .welcome .actions button {
+    padding: 10px 40px;
+    border: none;
+    margin: 30px 10px 0 0;
+    color: #fff;
+    font-size: 1.2rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.landing .welcome .actions button.btn-start {
+    background-color: var(--main-color);
+    border: 1px solid transparent;
+}
+.landing .welcome .actions button.btn-more {
+    border: 1px solid #fff;
+    background-color: transparent;
+}
+.landing  .scroll-down {
+    position: absolute;
+    bottom:40px;
+    text-align: center;
+    width: 100%;
+
+}
+.landing  .scroll-down span {
+    font-size: 1.2rem;
+    background-color: #fff;
+    color: var(--main-color);
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+    display: block;
+    width:150px;
+    margin:auto;
+}
+.landing  .scroll-down span a {
+    color: var(--main-color);
+    font-family: cursive;
+}
+.landing  .scroll-down span:hover{
+    transform: translateY(25px);
+    color: #fff;
+    background-color: var(--main-color);
+}
+.landing  .scroll-down span:hover a {
+    color: #fff;
+    display: block;
+}
+/* Start Navbar*/
+.navbar .logo {
+    font-family: 'Lobster', cursive;
+    font-size: 2rem;
+    color:#EEE;
+    transition: 0.5s;
+    outline: none;
+}
+.navbar .logo:hover,
+.navbar .logo:focus {
+    color: #fff;
+}
+.navbar .login {
+    padding: 10px 40px 10px 40px;
+    color: #fff;
+    border: none;
+    background-color: var(--main-color);
+}
+.navbar .login svg {
+    margin-right: 5px;
+}
+
+
+/* Start About Section*/
+.about {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    color: #eee;
+}
+.about .feat {
+    margin-top:50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.about .feat .con {
+    padding: 30px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    transition: .5s;
+}
+.about .feat .con:hover {
+    transform: translate(20px);
+}
+.about .feat .con .icon {
+    background-color: #333;
+    width: 70px;
+    height: 70px;
+    text-align: center;
+    line-height: 70px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+.about .feat .con .icon svg {
+    fill:var(--main-color);
+}
+.about .feat .con span{
+    font-family: cursive;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+}
+.about .action {
+    text-align: center;
+    margin-top:55px;
+}
+.about .action .btn:focus {
+    outline: none;
+    border: none;
+}
+@media(max-width: 768px) {
+    .about .feat {
+        margin-top:50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content:center;
+    }
+
+}
+/* Start Selling Section*/
+.selling {
+    padding-top: 70px;
+    padding-bottom: 70px;
+    color: #fff;
+    max-width: 70%;
+    margin: auto;
+}
+.selling h2 {
+    font-style: italic;
+    font-weight: bold;;
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin-bottom: 50px
+}
+.selling button {
+    background-color: var(--main-color);
+    padding:10px 30px;
+    border: none;
+    color: #EEE;
+    font-size: 1.2rem;
+    font-family: arial;
+    margin-top: 20px;
+}
+.selling button a {
+    color: #EEE;
+}
+.selling button a:hover {
+    color: #fff;
+}
+.selling button svg {
+    transition: 0.5s ease;
+}
+.selling button:hover {
+    border: 1px solid var(--main-color)
+}
+.selling button:hover svg {
+    transform: translateX(10px);
+}
+/* Start Footer*/
+footer {
+    background-color: #000;
+    color: #FFF;
+}
+footer .menu-list ul{
+    list-style: none;
+}
+footer .menu-list ul li {
+    display: inline-block; 
+    padding: 5px;
+    margin-top: 30px;
+    cursor: pointer;
+}
+footer .copy {
+    padding: 10px;
+    font-size: 1.2rem;
+    text-transform: capitalize;
+}
